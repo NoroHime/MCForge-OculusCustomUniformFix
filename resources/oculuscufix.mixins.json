@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "norohime.oculuscufix.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "MixinHardcodedCustomUniforms"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

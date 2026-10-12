@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="LGPL-3.0-only"
+
+[[mods]]
+modId="oculuscufix"
+version="1.0.0"
+displayName="Oculus Custom-Uniform Fix"
+authors="norohime"
+description='''
+Oculus 1.16.5 does not implement OptiFine custom uniforms (uniform.float.* in shaders.properties), so
+several popular shaderpacks silently lose features: Complementary Unbound rain puddles, rain sky/light
+tinting, rainbow visibility, and the whole EuphoriaPatches rain factor.
+
+This mod appends the missing names (inDry/inRainy/inSnowy, eyeBrightnessM2, maxBlindnessDarkness,
+rainFactorUniform) to Oculus' hardcoded custom-uniform table, so shaderpacks work unmodified.
+
+Client side only. Delete this jar to uninstall.
+'''
+
+[[dependencies.oculuscufix]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.oculuscufix]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.oculuscufix]]
+    modId="oculus"
+    mandatory=false
+    versionRange="[1.4.8,)"
+    ordering="AFTER"
+    side="CLIENT"

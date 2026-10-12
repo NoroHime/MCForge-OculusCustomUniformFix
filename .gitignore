@@ -1,0 +1,17 @@
+# build output
+build/
+dist/
+
+# local machine configuration (path to this machine's .minecraft)
+.mc-game-dir
+
+# IDE / editor
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store

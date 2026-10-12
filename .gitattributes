@@ -1,0 +1,7 @@
+# Normalise line endings: this is a cross-platform Java project, LF in the repository.
+* text=auto eol=lf
+
+# Binary artefacts
+*.jar binary
+*.png binary
+*.zip binary
